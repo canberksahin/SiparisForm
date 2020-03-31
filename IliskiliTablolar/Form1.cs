@@ -113,5 +113,17 @@ namespace IliskiliTablolar
 
             this.cokluIliskilerTableAdapter.Fill(this.dbIliskiliTablolarDataSet.CokluIliskiler);
         }
+
+        private void btnPerEkle_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("insert into Personel (AD) values(@p1)", con);
+            cmd.Parameters.AddWithValue("@p1", txtPer.Text);
+            cmd.ExecuteNonQuery();
+            con.Close();
+            txtPer.Clear();
+            MessageBox.Show("Personel başarılı bir şekilde eklenmiştir", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            PersonelleriCek();
+        }
     }
 }

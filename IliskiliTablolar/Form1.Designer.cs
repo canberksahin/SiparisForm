@@ -61,6 +61,9 @@
             this.txtYeniSipFiyat = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnSipEkle = new System.Windows.Forms.Button();
+            this.btnPerEkle = new System.Windows.Forms.Button();
+            this.txtPer = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cokluIliskilerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbIliskiliTablolarDataSet)).BeginInit();
@@ -244,6 +247,9 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btnPerEkle);
+            this.groupBox3.Controls.Add(this.txtPer);
+            this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.btnMüsteriEkle);
             this.groupBox3.Controls.Add(this.txtAdSoyad);
             this.groupBox3.Controls.Add(this.label8);
@@ -256,7 +262,7 @@
             // 
             // btnMüsteriEkle
             // 
-            this.btnMüsteriEkle.Location = new System.Drawing.Point(21, 86);
+            this.btnMüsteriEkle.Location = new System.Drawing.Point(31, 48);
             this.btnMüsteriEkle.Name = "btnMüsteriEkle";
             this.btnMüsteriEkle.Size = new System.Drawing.Size(180, 37);
             this.btnMüsteriEkle.TabIndex = 8;
@@ -266,7 +272,7 @@
             // 
             // txtAdSoyad
             // 
-            this.txtAdSoyad.Location = new System.Drawing.Point(101, 58);
+            this.txtAdSoyad.Location = new System.Drawing.Point(111, 20);
             this.txtAdSoyad.Name = "txtAdSoyad";
             this.txtAdSoyad.Size = new System.Drawing.Size(100, 23);
             this.txtAdSoyad.TabIndex = 1;
@@ -274,7 +280,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(18, 61);
+            this.label8.Location = new System.Drawing.Point(32, 23);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(73, 17);
             this.label8.TabIndex = 0;
@@ -360,6 +366,32 @@
             this.btnSipEkle.UseVisualStyleBackColor = true;
             this.btnSipEkle.Click += new System.EventHandler(this.btnSipEkle_Click);
             // 
+            // btnPerEkle
+            // 
+            this.btnPerEkle.Location = new System.Drawing.Point(31, 120);
+            this.btnPerEkle.Name = "btnPerEkle";
+            this.btnPerEkle.Size = new System.Drawing.Size(180, 37);
+            this.btnPerEkle.TabIndex = 11;
+            this.btnPerEkle.Text = "EKLE";
+            this.btnPerEkle.UseVisualStyleBackColor = true;
+            this.btnPerEkle.Click += new System.EventHandler(this.btnPerEkle_Click);
+            // 
+            // txtPer
+            // 
+            this.txtPer.Location = new System.Drawing.Point(125, 92);
+            this.txtPer.Name = "txtPer";
+            this.txtPer.Size = new System.Drawing.Size(86, 23);
+            this.txtPer.TabIndex = 10;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(28, 95);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(89, 17);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Personel Ad:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -422,6 +454,9 @@
         private System.Windows.Forms.ComboBox cmbUrunAd;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnSipEkle;
+        private System.Windows.Forms.Button btnPerEkle;
+        private System.Windows.Forms.TextBox txtPer;
+        private System.Windows.Forms.Label label10;
     }
 }
 

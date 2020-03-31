@@ -18,7 +18,7 @@ namespace IliskiliTablolar
             InitializeComponent();
         }
 
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-427L4HT;Initial Catalog=DbIliskiliTablolar;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=DbIliskiliTablolar;Integrated Security=True");
 
         private void Form1_Load(object sender, EventArgs e)
         {
